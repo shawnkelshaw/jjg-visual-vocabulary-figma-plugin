@@ -1,0 +1,52 @@
+{
+  "components": [
+    {
+      "key": "1132d6e236414f8b79cdc4d098673579bbab32db",
+      "name": "Page Stack (New)",
+      "description": "",
+      "category": "Pages",
+      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/iHD/ni5/XjwUQwAybpSFjA1v/2_32.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8165aaae89f07763d12f1f962ec167638100d8cd7dd80c9a303277298e676376",
+      "node_id": "2:32"
+    },
+    {
+      "key": "2e8cf4921eb24a1cf4832cea19f760bd1ca3e17e",
+      "name": "Page (Existing)",
+      "description": "",
+      "category": "Pages",
+      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/04m/uKp/3W6xWj2oaYyVbLgR/1_15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b4081310de243a54c1484d78d5b036e663b60375065c4acbae20d34f03b448de",
+      "node_id": "1:15"
+    },
+    {
+      "key": "65fb06ff5b5131d467a8d0866f5a3fa975e7ee1a",
+      "name": "Page (New)",
+      "description": "",
+      "category": "Pages",
+      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ryY/HKS/2PpRrjyYNoo3QwYn/1_13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3f0eb05479737a01d418e6c537382cc7577d0f3af0b6232642241dc3faa3b385",
+      "node_id": "1:13"
+    },
+    {
+      "key": "9a77c17ba6a948c983176a07f9fdbe1d5d89f683",
+      "name": "Page Stack (Existing w/Changes)",
+      "description": "",
+      "category": "Pages",
+      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Fmi/cYO/L4V2ZZbqYdUbSwER/30_828.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a2541591ff358c5d501c40382b4adef66f41873f654d0e1875ade5485b7e1b3",
+      "node_id": "30:828"
+    },
+    {
+      "key": "b90e2e10fdf332de2ca99bd674b3521e5244777b",
+      "name": "Page Stack (Existing)",
+      "description": "",
+      "category": "Pages",
+      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xw9/CP9/qIvwg4AvR3S1ljwn/2_34.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6e3ade005936eea232b30d82252aa95afd42b3a4c63c85cca5c7d3d52360dc19",
+      "node_id": "2:34"
+    },
+    {
+      "key": "315cf60097aac8b588557b58c1057fd97f8f36d5",
+      "name": "Page (Existing w/Changes)",
+      "description": "",
+      "category": "Pages",
+      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Aiw/kSd/jgzWO7gAVBD5iqmY/30_823.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b8d0b0382bce03ffbe6c41636a32cfb9956926d909fca54276a91db2b73b5236",
+      "node_id": "30:823"
+    }
+  ]
+}

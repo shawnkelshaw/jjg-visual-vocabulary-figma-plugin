@@ -1,0 +1,488 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    :root { 
+      --bg: #fff; 
+      --fg: #222; 
+      --muted: #666; 
+      --line: #e6e6e6; 
+      --primary: #0066ff;
+      --primary-hover: #0052cc;
+    }
+    
+    * { box-sizing: border-box; }
+    
+    html, body { 
+      margin: 0; 
+      padding: 0; 
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; 
+      height: 100%;
+    }
+    
+    .wrap { 
+      display: flex; 
+      flex-direction: column; 
+      height: 100vh; 
+    }
+    
+    header { 
+      padding: 16px; 
+      background: var(--bg);
+    }
+    
+    header h1 { 
+      margin: 0 0 4px 0; 
+      font-size: 16px; 
+      font-weight: 600; 
+      color: var(--fg); 
+    }
+    
+    header p { 
+      margin: 0;
+      font-size: 12px;
+      color: #666666;
+    }
+    
+    .left-panel { 
+      width: 180px; 
+      border-right: 1px solid var(--line); 
+      border-top: 1px solid #e0e0e0;
+      overflow-y: auto; 
+      padding: 16px;
+    }
+    
+    .middle-panel { 
+      flex: 1; 
+      border-right: 1px solid var(--line); 
+      border-top: 1px solid #e0e0e0;
+      overflow-y: auto; 
+      padding: 20px;
+      background: var(--bg);
+    }
+    
+    .right-panel { 
+      width: 140px; 
+      padding: 20px;
+      border-top: 1px solid #e0e0e0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .filter-chips {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 8px;
+      padding: 0 12px;
+    }
+    
+    .filter-chip {
+      padding: 6px 12px;
+      border: 1px solid #e0e0e0;
+      border-radius: 16px;
+      background: #ffffff;
+      color: #666666;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+    
+    .filter-chip:hover {
+      background: #f5f5f5;
+      border-color: #cccccc;
+    }
+    
+    .filter-chip.active {
+      background: #0066cc;
+      color: #ffffff;
+      border-color: #0066cc;
+    }
+    
+    .filter-chip.active:hover {
+      background: #0052a3;
+      border-color: #0052a3;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+      overflow: hidden;
+    }
+
+    .components-grid { 
+      display: flex; 
+      flex-direction: column; 
+      gap: 8px; 
+    }
+    
+    
+    .component-card { 
+      border: 1px solid var(--line); 
+      border-radius: 6px; 
+      padding: 12px; 
+      background: var(--bg); 
+      cursor: pointer; 
+      transition: all 0.2s ease; 
+      user-select: none;
+      margin-bottom: 8px;
+    }
+    
+    .component-card:hover { 
+      border-color: var(--primary); 
+      box-shadow: 0 2px 8px rgba(0, 102, 255, 0.1); 
+    }
+    
+    .component-card.selected { 
+      border-color: var(--primary); 
+      background: rgba(0, 102, 255, 0.05); 
+    }
+    
+    .component-icon { 
+      width: 100%; 
+      height: 50px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      margin-bottom: 8px; 
+      background: #f8f9fa; 
+      border-radius: 4px; 
+    }
+    
+    .component-name { 
+      font-size: 11px; 
+      font-weight: 500; 
+      color: var(--fg); 
+      text-align: center; 
+      line-height: 1.3; 
+    }
+    
+    .description-content { 
+      height: 100%;
+    }
+    
+    .description-content.empty { 
+      display: flex; 
+      align-items: flex-start; 
+      justify-content: flex-start; 
+      color: var(--muted); 
+      font-size: 12px; 
+      height: 100%;
+      padding-top: 0;
+    }
+    
+    .selected-component { 
+      font-size: 14px; 
+      font-weight: 600; 
+      color: var(--fg); 
+      margin-bottom: 8px; 
+    }
+    
+    .component-description { 
+      font-size: 11px; 
+      color: var(--muted); 
+      line-height: 1.6; 
+      margin-bottom: 16px;
+      word-wrap: break-word;
+      max-height: none;
+      overflow: visible;
+      white-space: normal;
+    }
+    
+    .component-description p {
+      margin: 0 0 12px 0;
+    }
+    
+    .component-description p:last-child {
+      margin-bottom: 0;
+    }
+    
+    .component-description strong {
+      font-weight: 600;
+      color: var(--fg);
+    }
+    
+    .component-description em {
+      font-style: italic;
+    }
+    
+    .component-description a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    
+    .component-description a:hover {
+      text-decoration: underline;
+    }
+    
+    .action-button { 
+      background: var(--primary); 
+      color: white; 
+      border: none; 
+      border-radius: 6px; 
+      padding: 10px 12px; 
+      font-size: 11px; 
+      font-weight: 500; 
+      cursor: pointer; 
+      transition: all 0.2s ease; 
+      width: 100%;
+    }
+    
+    .action-button:hover:not(:disabled) { 
+      background: var(--primary-hover); 
+    }
+    
+    .action-button:disabled { 
+      background: #e0e0e0; 
+      color: #999999;
+      cursor: not-allowed; 
+      opacity: 1;
+      border: 1px solid #e0e0e0;
+    }
+    
+    .footer-panel {
+      padding: 8px 12px;
+      border-top: 1px solid #e0e0e0;
+      background: var(--bg);
+      text-align: left;
+    }
+    
+    .footer-panel p {
+      margin: 0;
+      font-size: 10px;
+      color: #999999;
+      line-height: 1.2;
+    }
+    
+    .loading { 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      height: 200px; 
+      color: var(--muted); 
+      font-size: 12px; 
+    }
+    
+    /* Click to select styles */
+    .component-card { 
+      cursor: pointer; 
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>JJG Visual Vocabulary Library</h1>
+      <p>Select a category, then a component. Click Insert to add the component to the canvas.</p>
+    </header>
+
+    <!-- Category Filter Chips -->
+    <div class="filter-chips">
+      <button class="filter-chip active" data-category="Preface" style="margin-right: 16px;">Preface</button>
+      <button class="filter-chip" data-category="Pages">Pages</button>
+      <button class="filter-chip" data-category="Connectors">Connectors</button>
+      <button class="filter-chip" data-category="Data Elements">Data</button>
+      <button class="filter-chip" data-category="Logic Elements">Logic</button>
+      <button class="filter-chip" data-category="Grouping Elements">Grouping</button>
+      <button class="filter-chip" data-category="References">References</button>
+    </div>
+    
+    <div class="container">
+      <div class="left-panel">
+        <div class="components-grid" id="componentsGrid">
+          <!-- Components will be populated here -->
+        </div>
+      </div>
+        
+      <div class="middle-panel">
+        <div class="description-content empty" id="descriptionContent">
+          Select a component to view its description
+        </div>
+      </div>
+        
+      <div class="right-panel">
+        <button class="action-button" id="insertButton" disabled aria-label="Insert selected component" aria-describedby="descriptionContent">Insert</button>
+      </div>
+    </div>
+    
+    <!-- Footer Panel -->
+    <div class="footer-panel">
+      <p>Symbology © 2000 by Jesse James Garrett | Plugin created by Shawn Kelshaw</p>
+    </div>
+  </div>
+
+  <script>
+    let components = [];
+    let selectedComponent = null;
+    let activeFilter = 'Preface'; // Default filter
+
+    // Request components data from plugin
+    parent.postMessage({ pluginMessage: { type: 'get-components' } }, '*');
+
+    // Listen for messages from plugin
+    window.onmessage = (event) => {
+      const msg = event.data.pluginMessage;
+      if (!msg) return;
+
+      if (msg.type === 'components-data') {
+        components = msg.components;
+        setupFilterChips();
+        renderComponents();
+      }
+
+      if (msg.type === 'component-selected') {
+        selectedComponent = msg.component;
+        updateDescriptionPanel();
+      }
+    };
+
+    function setupFilterChips() {
+      const filterChips = document.querySelectorAll('.filter-chip');
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          filterChips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeFilter = chip.dataset.category;
+          
+          // Reset description panel to default state
+          selectedComponent = null;
+          updateDescriptionPanel();
+          
+          renderComponents();
+        });
+      });
+    }
+
+    function renderComponents() {
+      const grid = document.getElementById('componentsGrid');
+      
+      // Filter components by active category
+      const filteredComponents = components.filter(component => 
+        component.category === activeFilter
+      );
+
+      // Render filtered components directly
+      grid.innerHTML = '';
+      filteredComponents.forEach(component => {
+        const card = createComponentCard(component);
+        grid.appendChild(card);
+      });
+    }
+
+    function createComponentCard(component) {
+      const card = document.createElement('div');
+      card.className = 'component-card';
+      card.dataset.componentKey = component.key;
+      
+      const icon = document.createElement('div');
+      icon.className = 'component-icon';
+      icon.innerHTML = getComponentIcon(component.key, component);
+      
+      const name = document.createElement('div');
+      name.className = 'component-name';
+      name.textContent = component.name;
+      
+      card.appendChild(icon);
+      card.appendChild(name);
+      
+      // Click to select
+      card.addEventListener('click', () => {
+        selectComponent(component, card);
+      });
+      
+      return card;
+    }
+
+    function selectComponent(component, cardElement) {
+      // Remove previous selection
+      document.querySelectorAll('.component-card.selected').forEach(card => {
+        card.classList.remove('selected');
+      });
+      
+      // Add selection to clicked card
+      cardElement.classList.add('selected');
+      
+      selectedComponent = component;
+      parent.postMessage({ 
+        pluginMessage: { 
+          type: 'select-component', 
+          component: component 
+        } 
+      }, '*');
+      
+      updateDescriptionPanel();
+    }
+
+    function updateDescriptionPanel() {
+      const content = document.getElementById('descriptionContent');
+      const insertButton = document.getElementById('insertButton');
+      
+      if (!selectedComponent) {
+        content.className = 'description-content empty';
+        content.innerHTML = 'Select a component to view its description';
+        insertButton.disabled = true;
+        insertButton.setAttribute('aria-label', 'Select a component to enable insert');
+        return;
+      }
+      
+      content.className = 'description-content';
+      content.innerHTML = ''; // Clear existing content
+      
+      const descriptionDiv = document.createElement('div');
+      descriptionDiv.className = 'component-description';
+      
+      // Simple text formatting - escape HTML and handle paragraphs
+      let formattedText = selectedComponent.description;
+      
+      // Escape HTML characters to prevent interpretation as tags
+      formattedText = formattedText.replace(/&/g, '&amp;');
+      formattedText = formattedText.replace(/</g, '&lt;');
+      formattedText = formattedText.replace(/>/g, '&gt;');
+      
+      // Handle bold text with **text**
+      formattedText = formattedText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+      
+      // Split by double line breaks to create paragraphs
+      const paragraphs = formattedText.split('\n\n');
+      const htmlParagraphs = paragraphs.map(p => {
+        // Convert single line breaks within paragraphs to <br>
+        const withBreaks = p.replace(/\n/g, '<br>');
+        return `<p>${withBreaks}</p>`;
+      });
+      
+      descriptionDiv.innerHTML = htmlParagraphs.join('');
+      
+      content.appendChild(descriptionDiv);
+      insertButton.disabled = false;
+      insertButton.setAttribute('aria-label', `Insert ${selectedComponent.name} component`);
+    }
+
+    function insertComponent() {
+      if (selectedComponent) {
+        parent.postMessage({ 
+          pluginMessage: { 
+            type: 'insert-component', 
+            component: selectedComponent 
+          } 
+        }, '*');
+      }
+    }
+
+    // Wire up the insert button
+    document.getElementById('insertButton').addEventListener('click', insertComponent);
+
+    function getComponentIcon(key, component) {
+      // Use actual thumbnail from Figma API if available
+      if (component && component.thumbnail_url) {
+        return `<img src="${component.thumbnail_url}" alt="${component.name}" style="width: 100%; height: 100%; object-fit: contain; border-radius: 2px;">`;
+      }
+      
+      // Fallback to simple page icon
+      return '<svg width="30" height="24" viewBox="0 0 30 24"><rect x="2" y="2" width="26" height="20" rx="2" fill="none" stroke="#333" stroke-width="2"/></svg>';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "JJG Visual Vocabulary Library",
+  "id": "jjg-visvocab-library",
+  "api": "1.0.0",
+  "editorType": ["figma", "figjam"],
+  "main": "code.js",
+  "ui": "ui.html",
+  "menu": [
+    { "name": "Open Component Library", "command": "open" }
+  ]
+}

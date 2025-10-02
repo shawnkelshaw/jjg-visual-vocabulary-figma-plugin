@@ -1,0 +1,12 @@
+{
+    "name": "jjg-visvocab-starter",
+    "version": "0.1.0",
+    "scripts": {
+      "build": "esbuild code.ts --bundle --outfile=code.js --target=es2018",
+      "watch": "esbuild code.ts --bundle --outfile=code.js --target=es2018 --watch"
+    },
+    "devDependencies": {
+      "esbuild": "^0.23.0",
+      "@figma/plugin-typings": "^1.98.0"
+    }
+  }
