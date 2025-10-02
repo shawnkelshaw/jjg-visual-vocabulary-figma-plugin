@@ -79,6 +79,17 @@ npm install
 npm run build
 ```
 
+### Component Extraction (Optional)
+To extract component metadata from Figma API:
+1. Set your Figma Personal Access Token as an environment variable:
+   ```bash
+   export FIGMA_TOKEN="your-figma-personal-access-token"
+   ```
+2. Run the extraction script:
+   ```bash
+   node extract-components.js
+   ```
+
 ### Watch Mode (for development)
 ```bash
 npm run watch
