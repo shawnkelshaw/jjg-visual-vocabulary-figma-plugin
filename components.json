@@ -1,52 +1,182 @@
-{
-  "components": [
-    {
-      "key": "1132d6e236414f8b79cdc4d098673579bbab32db",
-      "name": "Page Stack (New)",
-      "description": "",
-      "category": "Pages",
-      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/iHD/ni5/XjwUQwAybpSFjA1v/2_32.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8165aaae89f07763d12f1f962ec167638100d8cd7dd80c9a303277298e676376",
-      "node_id": "2:32"
-    },
-    {
-      "key": "2e8cf4921eb24a1cf4832cea19f760bd1ca3e17e",
-      "name": "Page (Existing)",
-      "description": "",
-      "category": "Pages",
-      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/04m/uKp/3W6xWj2oaYyVbLgR/1_15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b4081310de243a54c1484d78d5b036e663b60375065c4acbae20d34f03b448de",
-      "node_id": "1:15"
-    },
-    {
-      "key": "65fb06ff5b5131d467a8d0866f5a3fa975e7ee1a",
-      "name": "Page (New)",
-      "description": "",
-      "category": "Pages",
-      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ryY/HKS/2PpRrjyYNoo3QwYn/1_13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=3f0eb05479737a01d418e6c537382cc7577d0f3af0b6232642241dc3faa3b385",
-      "node_id": "1:13"
-    },
-    {
-      "key": "9a77c17ba6a948c983176a07f9fdbe1d5d89f683",
-      "name": "Page Stack (Existing w/Changes)",
-      "description": "",
-      "category": "Pages",
-      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Fmi/cYO/L4V2ZZbqYdUbSwER/30_828.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9a2541591ff358c5d501c40382b4adef66f41873f654d0e1875ade5485b7e1b3",
-      "node_id": "30:828"
-    },
-    {
-      "key": "b90e2e10fdf332de2ca99bd674b3521e5244777b",
-      "name": "Page Stack (Existing)",
-      "description": "",
-      "category": "Pages",
-      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xw9/CP9/qIvwg4AvR3S1ljwn/2_34.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6e3ade005936eea232b30d82252aa95afd42b3a4c63c85cca5c7d3d52360dc19",
-      "node_id": "2:34"
-    },
-    {
-      "key": "315cf60097aac8b588557b58c1057fd97f8f36d5",
-      "name": "Page (Existing w/Changes)",
-      "description": "",
-      "category": "Pages",
-      "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Aiw/kSd/jgzWO7gAVBD5iqmY/30_823.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWC6UK6QLJ2%2F20251002%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251002T000000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b8d0b0382bce03ffbe6c41636a32cfb9956926d909fca54276a91db2b73b5236",
-      "node_id": "30:823"
-    }
-  ]
-}
+[
+  {
+    "name": "Page Stack (New)",
+    "key": "1132d6e236414f8b79cdc4d098673579bbab32db",
+    "description": "Page Stack (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Page (Existing)",
+    "key": "2e8cf4921eb24a1cf4832cea19f760bd1ca3e17e",
+    "description": "Page (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Page (New)",
+    "key": "65fb06ff5b5131d467a8d0866f5a3fa975e7ee1a",
+    "description": "Page (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Continuation (New)",
+    "key": "4c59b0310f2bce552f24fe009cb307697b87dfe7",
+    "description": "Continuation (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Concurrent (New)",
+    "key": "34ebe982289aaa7c1741b7e42f648b1d635e63c1",
+    "description": "Concurrent (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Concurrent (Existing)",
+    "key": "76be06c25e2e56da70338ea00edb0a412a460059",
+    "description": "Concurrent (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "File (Existing)",
+    "key": "e8216d8efe3c85db0008ed2b248dcd42e6fd2070",
+    "description": "File (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Continuation (Existing)",
+    "key": "d0d3c445572ca111a076523d05fbb73d6f859a0b",
+    "description": "Continuation (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Flow Area (New)",
+    "key": "77b847931af9bbd88eefcdb97b98c9a2d8e3817c",
+    "description": "Flow Area (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Conditional Area (Existing)",
+    "key": "a2887bb6c56cf926f3b9a69e2047dc1412a85012",
+    "description": "Conditional Area (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Decision Point (Existing)",
+    "key": "dc9310849acd173aefe5b9ee7caf1fb6f03885bc",
+    "description": "Decision Point (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Decision Point (New)",
+    "key": "dff8611e47e4a61cca725b3c68dbcfec8defe390",
+    "description": "Decision Point (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Flow Area (Existing)",
+    "key": "f9370ac4056ac4299f66576be980c56bd9cc1c4a",
+    "description": "Flow Area (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Conditional Branch (Existing)",
+    "key": "3de3693cdf0e437a53b6bf9ab78a6c1fc831f848",
+    "description": "Conditional Branch (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "File (New)",
+    "key": "a413a758807811855ffc1c4aeb12b29797bef1ef",
+    "description": "File (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Page Stack (Existing w/Changes)",
+    "key": "9a77c17ba6a948c983176a07f9fdbe1d5d89f683",
+    "description": "Page Stack (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "File (Existing w/Changes)",
+    "key": "c28aab3087c97e83d0d406278012e5fb6a9b80b9",
+    "description": "File (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Common Area (Existing)",
+    "key": "0e4045b163daab448df9b6bfc33e11832d43ad97",
+    "description": "Common Area (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Cluster (New)",
+    "key": "2bb4fbc62e5e1f8cbdb8f92cccc3d92028a5b8fb",
+    "description": "Cluster (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Cluster (Existing)",
+    "key": "5fd8d5039458c28b0b53bcccbbfafebd333a28e2",
+    "description": "Cluster (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Conditional Selector (Existing)",
+    "key": "72cf967e5571fa8408f6762b434e09831095e7b9",
+    "description": "Conditional Selector (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Conditional Selector (New)",
+    "key": "89d66eddba9e39872b4867c8022db9723fd70241",
+    "description": "Conditional Selector (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Common Area (New)",
+    "key": "a78a0847b39481f4c8fde57153035680a28e1d93",
+    "description": "Common Area (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Page Stack (Existing)",
+    "key": "b90e2e10fdf332de2ca99bd674b3521e5244777b",
+    "description": "Page Stack (Existing)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Conditional Branch (New)",
+    "key": "ee4ae413a392a51f22ca8936ef0182f0389c9b52",
+    "description": "Conditional Branch (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Conditional Area (New)",
+    "key": "fbf58fb33deb7fd0d82200d695c1a3c6fedd3f76",
+    "description": "Conditional Area (New)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "History & Background",
+    "key": "01e59ffc0263d2a33e3f7bb5e81a9d712ea7c55c",
+    "description": "History & Background\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "A Brief History of Logic",
+    "key": "387bbff0f5e14b263089e255693dadd45d3ace87",
+    "description": "A Brief History of Logic\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Dir Conn (No Upstream)",
+    "key": "735e1ac5aabffbaf0f9cdbbc07280daff971d4d0",
+    "description": "Dir Conn (No Upstream)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Dir Conn (Conditional / No Upstream)",
+    "key": "429c1e1b42473d2c04515641cfda32efb8cc58c2",
+    "description": "Dir Conn (Conditional / No Upstream)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Directional Connector",
+    "key": "41f4b8cf5e6663ad6b2eca298cf1f039266ecc69",
+    "description": "Directional Connector\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Relational Connector",
+    "key": "4ef2f4008f3814c054157f70a2f0605be8e6ffd4",
+    "description": "Relational Connector\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Page (Existing w/Changes)",
+    "key": "315cf60097aac8b588557b58c1057fd97f8f36d5",
+    "description": "Page (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Directional Connector (Conditional)",
+    "key": "248528c0e9e36611c3b7f4212fc3d35831b688b5",
+    "description": "Directional Connector (Conditional)\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Symbol Definition Cheat Sheet",
+    "key": "564d597cbae6ba1f6a733f1d38a654d7b9ae1c41",
+    "description": "Symbol Definition Cheat Sheet\n\nA component in the JJG Visual Vocabulary system."
+  },
+  {
+    "name": "Relational Connector (Conditional)",
+    "key": "7894e41094be26500071ab58ca7c61ac07c22ce3",
+    "description": "Relational Connector (Conditional)\n\nA component in the JJG Visual Vocabulary system."
+  }
+]

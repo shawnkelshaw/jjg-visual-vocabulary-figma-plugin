@@ -218,17 +218,33 @@
       text-decoration: underline;
     }
     
-    .action-button { 
-      background: var(--primary); 
-      color: white; 
-      border: none; 
-      border-radius: 6px; 
-      padding: 10px 12px; 
-      font-size: 11px; 
-      font-weight: 500; 
-      cursor: pointer; 
-      transition: all 0.2s ease; 
+    .connector-message {
+      background: var(--warning-bg);
+      color: var(--warning-text);
+      border: 1px solid var(--warning-border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 12px;
+      --warning-bg: #fef3cd;
+      --warning-text: #856404;
+      --warning-border: #ffeaa7;
+    }
+
+    .action-button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
       width: 100%;
+      margin-top: auto;
     }
     
     .action-button:hover:not(:disabled) { 
@@ -236,7 +252,7 @@
     }
     
     .action-button:disabled { 
-      background: #e0e0e0; 
+      background: #e0e0e0;
       color: #999999;
       cursor: not-allowed; 
       opacity: 1;
@@ -304,6 +320,9 @@
       </div>
         
       <div class="right-panel">
+        <div class="connector-message" id="connectorMessage" style="display: none;">
+          Use native connectors
+        </div>
         <button class="action-button" id="insertButton" disabled aria-label="Insert selected component" aria-describedby="descriptionContent">Insert</button>
       </div>
     </div>
@@ -419,12 +438,24 @@
     function updateDescriptionPanel() {
       const content = document.getElementById('descriptionContent');
       const insertButton = document.getElementById('insertButton');
+      const connectorMessage = document.getElementById('connectorMessage');
+      
+      // Handle Connectors category - always disable insert and show message
+      if (activeFilter === 'Connectors') {
+        connectorMessage.style.display = 'block';
+        insertButton.disabled = true;
+        insertButton.setAttribute('aria-label', 'Connectors cannot be inserted - use native connectors');
+      } else {
+        connectorMessage.style.display = 'none';
+      }
       
       if (!selectedComponent) {
         content.className = 'description-content empty';
         content.innerHTML = 'Select a component to view its description';
-        insertButton.disabled = true;
-        insertButton.setAttribute('aria-label', 'Select a component to enable insert');
+        if (activeFilter !== 'Connectors') {
+          insertButton.disabled = true;
+          insertButton.setAttribute('aria-label', 'Select a component to enable insert');
+        }
         return;
       }
       
@@ -456,8 +487,12 @@
       descriptionDiv.innerHTML = htmlParagraphs.join('');
       
       content.appendChild(descriptionDiv);
-      insertButton.disabled = false;
-      insertButton.setAttribute('aria-label', `Insert ${selectedComponent.name} component`);
+      
+      // Only enable insert button if not in Connectors category
+      if (activeFilter !== 'Connectors') {
+        insertButton.disabled = false;
+        insertButton.setAttribute('aria-label', `Insert ${selectedComponent.name} component`);
+      }
     }
 
     function insertComponent() {

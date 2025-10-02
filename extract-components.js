@@ -59,25 +59,30 @@ async function extractComponents() {
     console.log(`Components API Response status: ${response.status}`);
     console.log(`Found components metadata: ${Object.keys(componentsData.meta.components).length}`);
     
-    console.log('\nExtracting published components...');
-    
+    console.log('\n=== COMPONENT SETS ===');
     if (componentsData.meta.component_sets && Object.keys(componentsData.meta.component_sets).length > 0) {
-      console.log('\n=== ALL COMPONENT SETS ===');
       for (const [setKey, setMeta] of Object.entries(componentsData.meta.component_sets)) {
-        console.log(`Component Set: ${setMeta.name}`);
-        console.log(`Key: ${setKey}`);
-        console.log(`Node ID: ${setMeta.node_id}`);
-        console.log(`Description: ${setMeta.description || 'No description'}`);
-        console.log('---');
+        // Look for Flow Area component set at node 7:130
+        if (setMeta.node_id === '7:130' || setMeta.name.includes('Flow Area')) {
+          console.log(`\n=== FLOW AREA COMPONENT SET DETAILS ===`);
+          console.log(`Component Set: ${setMeta.name}`);
+          console.log(`Key: ${setKey}`);
+          console.log(`Node ID: ${setMeta.node_id}`);
+          console.log(`Description: ${setMeta.description || 'No description'}`);
+          console.log(`Description RT: ${setMeta.description_rt || 'No rich text description'}`);
+          console.log(`Created At: ${setMeta.created_at || 'Unknown'}`);
+          console.log(`Updated At: ${setMeta.updated_at || 'Unknown'}`);
+          console.log('Full metadata:', JSON.stringify(setMeta, null, 2));
+          console.log('---');
+        }
       }
     } else {
       console.log('No component sets found');
     }
-    
-    console.log('\n=== ALL COMPONENTS WITH FULL DETAILS ===');
     for (const [componentKey, componentMeta] of Object.entries(componentsData.meta.components)) {
       // Look for component at node 30:848
-      if (componentMeta.node_id === '30:848' || componentMeta.node_id.startsWith('30:84')) {
+      // Look for Flow Area component at node 7:130
+      if (componentMeta.node_id === '7:130' || componentMeta.name.includes('Flow Area')) {
         console.log(`\n=== COMPONENT DETAILS ===`);
         console.log(`Component: ${componentMeta.name}`);
         console.log(`Key: ${componentKey}`);
