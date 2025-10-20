@@ -104,7 +104,8 @@ async function extractComponents() {
       publishedComponents.push({
         name: componentMeta.name.replace('Symbol=', ''),
         key: componentMeta.key,
-        description: getComponentDescription(componentMeta.name.replace('Symbol=', ''))
+        description: getComponentDescription(componentMeta.name.replace('Symbol=', '')),
+        thumbnail_url: componentMeta.thumbnail_url
       });
     }
     

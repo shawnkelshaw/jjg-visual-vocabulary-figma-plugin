@@ -2,181 +2,223 @@
   {
     "name": "Page Stack (New)",
     "key": "1132d6e236414f8b79cdc4d098673579bbab32db",
-    "description": "Page Stack (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Page Stack (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/iHD/ni5/XjwUQwAybpSFjA1v/2_32.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=af16f1a9683b7b0c8389407619273c6ea24d87f8e36c6f6c0d51bb72e8b3673c"
   },
   {
     "name": "Page (Existing)",
     "key": "2e8cf4921eb24a1cf4832cea19f760bd1ca3e17e",
-    "description": "Page (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Page (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/0w8/pAp/NuSR90T6lIijFIQG/1_15.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ad52b978345a34a11bf97a133d6c68773b04d0e463e5d38f26cbac8724c45e81"
   },
   {
     "name": "Page (New)",
     "key": "65fb06ff5b5131d467a8d0866f5a3fa975e7ee1a",
-    "description": "Page (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Page (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/CJu/Y3x/PIqPu8OIGTsEGw7F/1_13.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d9e341176d357394b0fbfdd8f77567437bf585c2a16f9f33e5a223b46b9c2c62"
   },
   {
     "name": "Continuation (New)",
     "key": "4c59b0310f2bce552f24fe009cb307697b87dfe7",
-    "description": "Continuation (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Continuation (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Vtl/l4n/NlcQzNoqMKgCiop7/5_29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4a44b13ed8736e2f72714f583e99b700efe4325a2027b3bf0b3ab7fcbf5c595c"
   },
   {
     "name": "Concurrent (New)",
     "key": "34ebe982289aaa7c1741b7e42f648b1d635e63c1",
-    "description": "Concurrent (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Concurrent (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/4nX/4eu/f3PYZBEl0YmHVDAz/4_7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6e5d6ccb02bf3e92fe890cd3d8218bdea1000a29e545bfce8af3e61f5af99d3b"
   },
   {
     "name": "Concurrent (Existing)",
     "key": "76be06c25e2e56da70338ea00edb0a412a460059",
-    "description": "Concurrent (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Concurrent (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/98p/Wd1/Qo32F5RUvsFBOQRf/4_9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c9f87b5eeef6bbae4d3813b58210a7465b30158f191bbca65d5fb1bcef0784c9"
   },
   {
     "name": "File (Existing)",
     "key": "e8216d8efe3c85db0008ed2b248dcd42e6fd2070",
-    "description": "File (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "File (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Ikc/7TW/ZBy0kVbDdR8Andmj/3_55.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=fbb429b5da9106547bd222a30025595964313613a7cf6b437891993035df48a2"
   },
   {
     "name": "Continuation (Existing)",
     "key": "d0d3c445572ca111a076523d05fbb73d6f859a0b",
-    "description": "Continuation (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Continuation (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ZVT/U69/XqpREfpgFTuzHZeg/5_31.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=9281a78583212fb4ac2c99a82fe6da94a047aeca7c8351eab9e94193dd2aa67e"
   },
   {
     "name": "Flow Area (New)",
     "key": "77b847931af9bbd88eefcdb97b98c9a2d8e3817c",
-    "description": "Flow Area (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Flow Area (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Txp/opG/TE5bdAtfz9QxAN4J/7_128.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=1049490ee8b65b045351d508d756c412199cb3743db2b0761b004415252f29c4"
   },
   {
     "name": "Conditional Area (Existing)",
     "key": "a2887bb6c56cf926f3b9a69e2047dc1412a85012",
-    "description": "Conditional Area (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Conditional Area (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ZOv/qnG/0WlvLWTHOrUxQbio/13_48.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=a8448ccc2024ba0cc7e8444b96de938f64deeea54e302513ca8e189b560a5283"
   },
   {
     "name": "Decision Point (Existing)",
     "key": "dc9310849acd173aefe5b9ee7caf1fb6f03885bc",
-    "description": "Decision Point (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Decision Point (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/RhB/vvK/C9CdKmdDxQpb3dee/8_19.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=770a1a3343d277edc8882655c0cc66ec9da3637213d2538dc3d36c284def4daf"
   },
   {
     "name": "Decision Point (New)",
     "key": "dff8611e47e4a61cca725b3c68dbcfec8defe390",
-    "description": "Decision Point (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Decision Point (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/7Vl/gqg/NIPH1iqnZkgEYH9A/8_6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=6cf00b534e6f6224a688dc0af5edc49168b022f23b6aff258446b72671cf7352"
   },
   {
     "name": "Flow Area (Existing)",
     "key": "f9370ac4056ac4299f66576be980c56bd9cc1c4a",
-    "description": "Flow Area (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Flow Area (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/tGk/0gi/OO7K2wxzXhDIHcIG/7_131.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=508d6e4486b3fedbdcfcbfda13f433639788d4e288086e0afc28fd7d1f5d68f9"
   },
   {
     "name": "Conditional Branch (Existing)",
     "key": "3de3693cdf0e437a53b6bf9ab78a6c1fc831f848",
-    "description": "Conditional Branch (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Conditional Branch (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/7wV/isa/dDWImbSoJFSWCe3i/8_30.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=46285d4839967bbf60448498dac9ffd18777008c6642402a18d1a17fc93222bf"
   },
   {
     "name": "File (New)",
     "key": "a413a758807811855ffc1c4aeb12b29797bef1ef",
-    "description": "File (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "File (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Qu2/ZZU/SFuRKq6Y9vE1dEBq/3_41.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f7636245aaae3bf1a78009578d51dcc51904d829f3b27358d94893b1586b90a5"
   },
   {
     "name": "Page Stack (Existing w/Changes)",
     "key": "9a77c17ba6a948c983176a07f9fdbe1d5d89f683",
-    "description": "Page Stack (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "File (Existing w/Changes)",
-    "key": "c28aab3087c97e83d0d406278012e5fb6a9b80b9",
-    "description": "File (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Common Area (Existing)",
-    "key": "0e4045b163daab448df9b6bfc33e11832d43ad97",
-    "description": "Common Area (Existing)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Cluster (New)",
-    "key": "2bb4fbc62e5e1f8cbdb8f92cccc3d92028a5b8fb",
-    "description": "Cluster (New)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Cluster (Existing)",
-    "key": "5fd8d5039458c28b0b53bcccbbfafebd333a28e2",
-    "description": "Cluster (Existing)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Page Stack (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Fmi/cYO/L4V2ZZbqYdUbSwER/30_828.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5dc4719907e1a263386f0b290234df9854a04127045801de44f807a0e39350e4"
   },
   {
     "name": "Conditional Selector (Existing)",
     "key": "72cf967e5571fa8408f6762b434e09831095e7b9",
-    "description": "Conditional Selector (Existing)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Conditional Selector (New)",
-    "key": "89d66eddba9e39872b4867c8022db9723fd70241",
-    "description": "Conditional Selector (New)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Common Area (New)",
-    "key": "a78a0847b39481f4c8fde57153035680a28e1d93",
-    "description": "Common Area (New)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Page Stack (Existing)",
-    "key": "b90e2e10fdf332de2ca99bd674b3521e5244777b",
-    "description": "Page Stack (Existing)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Conditional Branch (New)",
-    "key": "ee4ae413a392a51f22ca8936ef0182f0389c9b52",
-    "description": "Conditional Branch (New)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Conditional Selector (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Pow/9Pt/Qe0zR1KC6lbBFSLt/9_9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c420eacbf07d78b70b922c6d782706ec800473444ddf0fd8f7945b7489d33870"
   },
   {
     "name": "Conditional Area (New)",
     "key": "fbf58fb33deb7fd0d82200d695c1a3c6fedd3f76",
-    "description": "Conditional Area (New)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "History & Background",
-    "key": "01e59ffc0263d2a33e3f7bb5e81a9d712ea7c55c",
-    "description": "History & Background\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "A Brief History of Logic",
-    "key": "387bbff0f5e14b263089e255693dadd45d3ace87",
-    "description": "A Brief History of Logic\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Dir Conn (No Upstream)",
-    "key": "735e1ac5aabffbaf0f9cdbbc07280daff971d4d0",
-    "description": "Dir Conn (No Upstream)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Conditional Area (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/pNR/zOm/Fk0w78MDQ288yMIZ/13_46.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=32235c1b0d98fbb98bbb2c8ab973b9f0875405cb5ec2ba73c090ce0dd07ac984"
   },
   {
     "name": "Dir Conn (Conditional / No Upstream)",
     "key": "429c1e1b42473d2c04515641cfda32efb8cc58c2",
-    "description": "Dir Conn (Conditional / No Upstream)\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Directional Connector",
-    "key": "41f4b8cf5e6663ad6b2eca298cf1f039266ecc69",
-    "description": "Directional Connector\n\nA component in the JJG Visual Vocabulary system."
-  },
-  {
-    "name": "Relational Connector",
-    "key": "4ef2f4008f3814c054157f70a2f0605be8e6ffd4",
-    "description": "Relational Connector\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Dir Conn (Conditional / No Upstream)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/6fE/hUk/OKpz06sJV5KVGlnx/35_24.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=378c78e75e394169c33137288206e69be62b45ee968026be0e34bbdb1fe911ea"
   },
   {
     "name": "Page (Existing w/Changes)",
     "key": "315cf60097aac8b588557b58c1057fd97f8f36d5",
-    "description": "Page (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Page (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Nur/kqs/QOtP5a0kKKRd63wi/30_823.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=8460edd9cb3bdab26cca56f6470c0b82fe47a717ab9adaa1439906f0cba283ba"
+  },
+  {
+    "name": "Cluster (New)",
+    "key": "2bb4fbc62e5e1f8cbdb8f92cccc3d92028a5b8fb",
+    "description": "Cluster (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/J4M/esa/ceQeAUdLKm8VG4YN/12_7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d02665ea007583bdb13e2ddd8b268c902e859117291104ee5938cbb8a0c32c97"
+  },
+  {
+    "name": "File (Existing w/Changes)",
+    "key": "c28aab3087c97e83d0d406278012e5fb6a9b80b9",
+    "description": "File (Existing w/Changes)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/eYO/k40/n5DKn37vDPhHIwp2/30_836.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=26c11c4a34fbea0f4d5fbfd590158b63bba09a4746ddb5819e260cefa00853df"
+  },
+  {
+    "name": "History & Background",
+    "key": "01e59ffc0263d2a33e3f7bb5e81a9d712ea7c55c",
+    "description": "History & Background\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/90f/x93/5Ez434RS9HXr3RXC/30_847.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=e9895dce1200958fbbb7578a4f393d7b9e5e95fe064e266138d834e8b18fbaf4"
+  },
+  {
+    "name": "Common Area (Existing)",
+    "key": "0e4045b163daab448df9b6bfc33e11832d43ad97",
+    "description": "Common Area (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/GUr/z3t/BhaCI2PjW7ar9TEM/5_49.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=039c7ae21d7f6c70d326389dc44f4fc91d591aa9a60d6cfb955f978a62d75a05"
   },
   {
     "name": "Directional Connector (Conditional)",
     "key": "248528c0e9e36611c3b7f4212fc3d35831b688b5",
-    "description": "Directional Connector (Conditional)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Directional Connector (Conditional)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/pwa/Kpv/hp5itBspfz7vfRoD/34_20.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=721c81cf9aa2f9708ba629067eba03268ea0a7195363de9fea596334d08292ad"
   },
   {
-    "name": "Symbol Definition Cheat Sheet",
-    "key": "564d597cbae6ba1f6a733f1d38a654d7b9ae1c41",
-    "description": "Symbol Definition Cheat Sheet\n\nA component in the JJG Visual Vocabulary system."
+    "name": "Directional Connector",
+    "key": "41f4b8cf5e6663ad6b2eca298cf1f039266ecc69",
+    "description": "Directional Connector\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/heP/KQG/m1SXz34Y26bsCU3u/32_54.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4a33381526117caeaded2e0426e2bcf625db6337b9fd726afaa7c636ec642983"
+  },
+  {
+    "name": "Relational Connector",
+    "key": "4ef2f4008f3814c054157f70a2f0605be8e6ffd4",
+    "description": "Relational Connector\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/KvZ/pIt/7xgn0fI2ihJ3XgOL/32_18.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=66c8bb4d4a2e4320c4d1e70cfde4d88fa8763f9c36b1c7087dbef18c583d3b99"
+  },
+  {
+    "name": "Cluster (Existing)",
+    "key": "5fd8d5039458c28b0b53bcccbbfafebd333a28e2",
+    "description": "Cluster (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/JEU/fdb/bFseLwUmDliA342T/12_9.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=4aa21153e9cf5a4a4c0f4c64f9040909facda7fda111fc5483fe8c2b693a7ed6"
+  },
+  {
+    "name": "Dir Conn (No Upstream)",
+    "key": "735e1ac5aabffbaf0f9cdbbc07280daff971d4d0",
+    "description": "Dir Conn (No Upstream)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/ico/pQX/PyxvMOCDm8Q557QY/35_22.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f26074529b36a044fa9fe8b2cd50ebcdd521243a687a2bead82816a4c8d854b7"
   },
   {
     "name": "Relational Connector (Conditional)",
     "key": "7894e41094be26500071ab58ca7c61ac07c22ce3",
-    "description": "Relational Connector (Conditional)\n\nA component in the JJG Visual Vocabulary system."
+    "description": "Relational Connector (Conditional)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/n2Y/vRv/4bxcSua1K20SrCQ5/32_73.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b7985b0cce3e16d2f05e55a66dc6f235823db2242df2ef17438ef583cd6ebb62"
+  },
+  {
+    "name": "Conditional Selector (New)",
+    "key": "89d66eddba9e39872b4867c8022db9723fd70241",
+    "description": "Conditional Selector (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/0AJ/XqM/PhpXKtyydc0NX6kE/9_7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ff9e1eb46e86e15fa52ea50e3e341651f4e7b1d24caadbfb81e6a001c599e997"
+  },
+  {
+    "name": "Common Area (New)",
+    "key": "a78a0847b39481f4c8fde57153035680a28e1d93",
+    "description": "Common Area (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/qbb/dG6/rvzpvxCz0L9EbxYp/5_44.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=b05dfa62013ee038969d9b4355b8bed194c323dec4029ae30bd24cfcf622ca2b"
+  },
+  {
+    "name": "Page Stack (Existing)",
+    "key": "b90e2e10fdf332de2ca99bd674b3521e5244777b",
+    "description": "Page Stack (Existing)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/xw9/CP9/qIvwg4AvR3S1ljwn/2_34.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d6e741c8d803391d1a084ee5d8f0f0d24081010a064dd4463e80011c4edbbbd4"
+  },
+  {
+    "name": "Conditional Branch (New)",
+    "key": "ee4ae413a392a51f22ca8936ef0182f0389c9b52",
+    "description": "Conditional Branch (New)\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/uQ4/Qnf/oSgoPlEkHSXA7Hbq/8_28.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=75fc0f6348cdfc67f7ca1e2e0d5cbca36249b28803178a2356bd3f8b117a22ef"
+  },
+  {
+    "name": "Person of Interest",
+    "key": "9c7b2a27893f2c02f483b8d5bc8648487d136019",
+    "description": "Person of Interest\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/XR3/R9m/G5qamNCsie7hKxsB/189_164.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=c501700739ef7f6cfd8a2cb59a2ec5ee3e3b5b885823e30487a85dd2c39f81b5"
+  },
+  {
+    "name": "Reference / A Brief History of Logic - Chapter 1",
+    "key": "387bbff0f5e14b263089e255693dadd45d3ace87",
+    "description": "Reference / A Brief History of Logic - Chapter 1\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/Cad/CQD/v3uocGPWie88XGhW/30_848.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=5a89c35aa47c28cd326d9562792edebf027a96137aecdcbdffe896e5ac2207f1"
+  },
+  {
+    "name": "Symbol Definition Cheat Sheet",
+    "key": "564d597cbae6ba1f6a733f1d38a654d7b9ae1c41",
+    "description": "Symbol Definition Cheat Sheet\n\nA component in the JJG Visual Vocabulary system.",
+    "thumbnail_url": "https://s3-alpha.figma.com/checkpoints/N4i/wdI/OJ5ORQUH283f11vM/30_846.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQ4GOSFWCUI57WO7Q%2F20251005%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20251005T120000Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=d64368d50ff8293ec78033fab5eea326a8794c399f492ef322d5532b2ed0d967"
   }
 ]

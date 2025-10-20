@@ -70,3 +70,7 @@ jspm_packages/
 
 # Figma plugin specific
 manifest.json.bak
+
+# Thumbnail processing
+thumbnails/
+thumbnail-base64.json
