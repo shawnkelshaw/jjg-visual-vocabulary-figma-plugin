@@ -2,26 +2,28 @@
 
 ## Plugin Description
 
-**JJG Visual Vocabulary Library** brings Jesse James Garrett's pioneering information architecture symbols directly to your Figma and FigJam workspace. This comprehensive component library contains 20 authentic visual vocabulary elements with original descriptions, enabling UX professionals and information architects to create clear, standardized flow diagrams and user experience documentation.
+**JJG Visual Vocabulary Library** brings Jesse James Garrett's pioneering information architecture symbols directly to your Figma and FigJam workspace. This comprehensive component library contains 23 authentic visual vocabulary elements with original descriptions, enabling UX professionals and information architects to create clear, standardized flow diagrams and user experience documentation.
 
 ### Key Features
-- **20 Authentic Components**: Complete collection of JJG Visual Vocabulary symbols
+- **23 Authentic Components**: Complete collection of JJG Visual Vocabulary symbols
 - **Original Descriptions**: Each component includes Jesse James Garrett's original explanations
-- **7 Organized Categories**: Preface, Pages, Data Elements, Logic Elements, Grouping Elements, References, and Connectors
+- **7 Organized Categories**: Preface, Pages & Files, Data Elements, Logic Elements, Grouping Elements, References, and Connectors
 - **Figma + FigJam Support**: Works seamlessly in both environments
 - **Professional Quality**: High-fidelity components ready for production use
 - **Easy Integration**: One-click insertion with automatic positioning
 
 ### Component Categories
 
-#### Preface (3 components)
+#### Preface (4 components)
+- Concepts & Principles
 - History & Background
 - Symbol Definition Cheat Sheet  
 - A Brief History of Logic
 
-#### Pages (2 components)
+#### Pages & Files (3 components)
 - Page
 - Page Stack
+- File Stack
 
 #### Data Elements (1 component)
 - File
@@ -39,8 +41,9 @@
 - Conditional Area
 - Flow Area
 
-#### References (1 component)
+#### References (2 components)
 - Continuation Point
+- Delay
 
 #### Connectors (5 components)
 - Relational Connector
@@ -70,10 +73,13 @@
 
 ### 🎉 Initial Release
 - Complete JJG Visual Vocabulary component library
-- 20 authentic components with original descriptions
+- 23 authentic components with original descriptions
 - Support for both Figma and FigJam
 - Category-based organization for easy browsing
 - Professional-quality components ready for production use
+- New: Concepts & Principles preface document
+- New: File Stack component for Pages & Files
+- New: Delay component for References
 
 ### 📚 Authentic Content
 - All component descriptions sourced from Jesse James Garrett's original visual vocabulary documentation
