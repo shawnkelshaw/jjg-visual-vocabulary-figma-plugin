@@ -8,8 +8,5 @@
   "menu": [
     { "name": "Open Component Library", "command": "open" }
   ],
-  "networkAccess": {
-    "allowedDomains": ["https://s3-alpha.figma.com"]
-  },
   "documentAccess": "dynamic-page"
 }

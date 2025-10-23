@@ -9,7 +9,12 @@ const prefaceMapping = {
   "Concepts & Principles": "Concepts & Principles.png",
   "History & Background": "History & Background.png",
   "Symbol Definition Cheat Sheet": "Symbol Definition Cheat Sheet.png",
-  "A Brief History of Logic": "A Brief History of Logic - Chapter 1.png"
+  "A Brief History of Logic": "A Brief History of Logic - Chapter 1.png",
+  "Delay": "Delay.png",
+  "File Stack": "File Stack.png",
+  "Page": "Page.png",
+  "Page Stack": "Page Stack.png",
+  "File": "File.png"
 };
 
 console.log('Reading code.ts...');

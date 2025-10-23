@@ -1,0 +1,22 @@
+{
+  "Page": {
+    "key": "65fb06ff5b5131d467a8d0866f5a3fa975e7ee1a",
+    "name": "Symbol=Page (New)",
+    "nodeId": "1:13"
+  },
+  "Page Stack": {
+    "key": "1132d6e236414f8b79cdc4d098673579bbab32db",
+    "name": "Symbol=Page Stack (New)",
+    "nodeId": "2:32"
+  },
+  "File": {
+    "key": "41f2bcd2512f964783f09317f97a8ac5d2d39416",
+    "name": "Symbol=File (New)",
+    "nodeId": "373:77"
+  },
+  "File Stack": {
+    "key": "e10814b76bd5529edb85a131862a66ce19a30cd3",
+    "name": "Symbol=Filestack (New)",
+    "nodeId": "373:195"
+  }
+}
