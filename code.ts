@@ -1,16 +1,32 @@
 // JJG Visual Vocabulary Library
 // Component library browser for JJG Visual Vocabulary symbols
 
+interface ConnectorConfig {
+  lineType: 'STRAIGHT' | 'ELBOWED';
+  strokeWeight: number;
+  strokeColor: string; // hex color
+  startCap: 'NONE' | 'ARROW_EQUILATERAL' | 'ARROW_LINES' | 'TRIANGLE_FILLED' | 'DIAMOND_FILLED' | 'CIRCLE_FILLED';
+  endCap: 'NONE' | 'ARROW_EQUILATERAL' | 'ARROW_LINES' | 'TRIANGLE_FILLED' | 'DIAMOND_FILLED' | 'CIRCLE_FILLED';
+  dashPattern?: number[]; // for dashed lines
+}
+
 interface Component {
   key: string;
   name: string;
   description: string;
   category: string;
   thumbnail_url?: string;
+  isFigJamConnector?: boolean; // Flag for FigJam-only connectors
+  connectorType?: 'relational' | 'directional'; // Type of connector (legacy)
+  connectorStyle?: 'straight' | 'curved'; // Style of connector (legacy)
+  isConditional?: boolean; // Dashed line (legacy)
+  hasNoBack?: boolean; // Has crossbar (legacy)
+  connectorConfig?: ConnectorConfig; // Detailed connector configuration
 }
 
 let selectedComponent: Component | null = null;
 const LIBRARY_KEY = 'KNkwcYwSv6vp1yrH5SnpBs'; // JJG Visual Vocabulary library key
+let currentEditorType: 'figma' | 'figjam' | 'dev' | 'slides' = 'figma'; // Track current environment
 
 // Manual component catalog
 const componentsData = {
@@ -176,6 +192,23 @@ const componentsData = {
       description: "Creating relationships: arrows\n\nIf for some reason we want to prohibit this upstream movement (such as in cases where some irreversible action like deleting a record has taken place), we use a crossbar (just a short perpendicular line) on the opposite end of the arrow to indicate this.\n\nConnector Labels\n\nConnectors and arrows can also be labeled, but the use of these should be limited to cases in which the action taken by the user needs to be clarified. If the labels become long and unwieldy and start to clutter the diagram, point the reader toward a footnote or appendix entry.",
       category: "Connectors",
       thumbnail_url: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjg4IiBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMjg4IDMwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMjg3LjQxNCAxNi40MTQyQzI4OC4xOTUgMTUuNjMzMiAyODguMTk1IDE0LjM2NjggMjg3LjQxNCAxMy41ODU4TDI3NC42ODYgMC44NTc4NjRDMjczLjkwNSAwLjA3NjgxNTggMjcyLjYzOSAwLjA3NjgxNTggMjcxLjg1OCAwLjg1Nzg2NEMyNzEuMDc3IDEuNjM4OTEgMjcxLjA3NyAyLjkwNTI0IDI3MS44NTggMy42ODYyOUwyODMuMTcyIDE1TDI3MS44NTggMjYuMzEzN0MyNzEuMDc3IDI3LjA5NDggMjcxLjA3NyAyOC4zNjExIDI3MS44NTggMjkuMTQyMUMyNzIuNjM5IDI5LjkyMzIgMjczLjkwNSAyOS45MjMyIDI3NC42ODYgMjkuMTQyMUwyODcuNDE0IDE2LjQxNDJaTTAgMTVWMTdIMjg2VjE1VjEzSDBWMTVaIiBmaWxsPSIjMjkyOTI5Ii8+CjxsaW5lIHgxPSIzNyIgeTE9IjIiIHgyPSIzNyIgeTI9IjI4IiBzdHJva2U9IiMyOTI5MjkiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2Zz4K"
+    },
+    
+    // FigJam Connectors - Only available in FigJam environment
+    {
+      key: "figjam-connector-directional-happy",
+      name: "Directional - Happy Path",
+      description: "Text Connector\n\nA straight connector with a simple endcap and triangle arrow. Default text label: '[user or system action]'. Line thickness: 3px, color: black.",
+      category: "Connectors",
+      isFigJamConnector: true,
+      connectorConfig: {
+        lineType: 'STRAIGHT',
+        strokeWeight: 3,
+        strokeColor: '#000000',
+        startCap: 'NONE',
+        endCap: 'ARROW_EQUILATERAL'
+      },
+      thumbnail_url: "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTYwIDQwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDwhLS0gQ29ubmVjdG9yIGxpbmUgLS0+CiAgPGxpbmUgeDE9IjEwIiB5MT0iMjAiIHgyPSIxMzAiIHkyPSIyMCIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIAogIDwhLS0gQXJyb3cgaGVhZCAodHJpYW5nbGUpIC0tPgogIDxwYXRoIGQ9Ik0gMTMwIDIwIEwgMTUwIDIwIEwgMTQwIDEzIFogTSAxMzAgMjAgTCAxNTAgMjAgTCAxNDAgMjcgWiIgZmlsbD0iIzAwMDAwMCIvPgogIAogIDwhLS0gVGV4dCBsYWJlbCAtLT4KICA8dGV4dCB4PSI4MCIgeT0iMTUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0iIzAwMDAwMCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+dGV4dDwvdGV4dD4KPC9zdmc+Cg=="
     }
   ]
 };
@@ -192,12 +225,39 @@ figma.on('run', ({ command }) => {
 function openUI() {
   figma.showUI(__html__, { width: 600, height: 700 });
   
+  // Detect current environment
+  currentEditorType = figma.editorType;
+  
   figma.ui.onmessage = async (msg) => {
     if (msg?.type === 'get-components') {
-      // Send component catalog to UI
+      console.log('Current editor type:', currentEditorType);
+      console.log('Total components:', componentsData.components.length);
+      
+      // Filter components based on environment
+      const filteredComponents = componentsData.components.filter(comp => {
+        // If it's a FigJam connector, only show in FigJam
+        if (comp.isFigJamConnector) {
+          const show = currentEditorType === 'figjam';
+          console.log(`FigJam connector ${comp.name}: ${show ? 'SHOW' : 'HIDE'}`);
+          return show;
+        }
+        // If it's a Figma connector (not FigJam), only show in Figma
+        if (comp.category === 'Connectors' && !comp.isFigJamConnector) {
+          const show = currentEditorType === 'figma';
+          console.log(`Figma connector ${comp.name}: ${show ? 'SHOW' : 'HIDE'}`);
+          return show;
+        }
+        // All other components show in both environments
+        return true;
+      });
+      
+      console.log('Filtered components:', filteredComponents.length);
+      
+      // Send component catalog and environment info to UI
       figma.ui.postMessage({
         type: 'components-data',
-        components: componentsData.components
+        components: filteredComponents,
+        editorType: currentEditorType
       });
       return;
     }
@@ -225,11 +285,95 @@ function openUI() {
   };
 }
 
+async function createFigJamConnector(component: Component, position?: { x: number, y: number }): Promise<ConnectorNode | null> {
+  try {
+    console.log('🔧 createFigJamConnector called for:', component.name);
+    console.log('   currentEditorType:', currentEditorType);
+    console.log('   has connectorConfig:', !!component.connectorConfig);
+    
+    // Check if we're in FigJam (connectors only work in FigJam)
+    if (currentEditorType !== 'figjam') {
+      console.log('❌ Not in FigJam editor');
+      figma.notify('Connectors can only be created in FigJam');
+      return null;
+    }
+    
+    // Create a connector node using the FigJam-specific API
+    if (typeof (figma as any).createConnector !== 'function') {
+      console.log('❌ createConnector function not available');
+      figma.notify('Connector creation is only available in FigJam');
+      return null;
+    }
+    
+    console.log('✅ Creating connector...');
+    const connector = (figma as any).createConnector() as ConnectorNode;
+    console.log('✅ Connector created');
+    
+    // Position at viewport center
+    const centerX = position ? position.x : figma.viewport.center.x;
+    const centerY = position ? position.y : figma.viewport.center.y;
+    
+    // Set endpoints with positions (not attached to nodes)
+    connector.connectorStart = { 
+      position: { x: centerX - 50, y: centerY }
+    };
+    console.log('✅ Set connectorStart');
+    
+    connector.connectorEnd = { 
+      position: { x: centerX + 50, y: centerY }
+    };
+    console.log('✅ Set connectorEnd');
+    
+    // Apply connector configuration
+    if (component.connectorConfig) {
+      connector.strokeWeight = component.connectorConfig.strokeWeight;
+      console.log('✅ Set strokeWeight:', component.connectorConfig.strokeWeight);
+      
+      connector.connectorStartStrokeCap = component.connectorConfig.startCap;
+      console.log('✅ Set startCap:', component.connectorConfig.startCap);
+      
+      connector.connectorEndStrokeCap = component.connectorConfig.endCap;
+      console.log('✅ Set endCap:', component.connectorConfig.endCap);
+    } else {
+      connector.strokeWeight = 3;
+    }
+    
+    console.log('✅ Connector creation complete!');
+    return connector;
+  } catch (error) {
+    console.error('❌ Error creating FigJam connector:', error);
+    return null;
+  }
+}
+
+// Helper function to convert hex color to RGB
+function hexToRgb(hex: string): { r: number, g: number, b: number } {
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+    r: parseInt(result[1], 16) / 255,
+    g: parseInt(result[2], 16) / 255,
+    b: parseInt(result[3], 16) / 255
+  } : { r: 0, g: 0, b: 0 };
+}
+
 async function insertComponentInstance(component: Component, position?: { x: number, y: number }) {
   try {
     console.log(`Attempting to import component: ${component.name} with key: ${component.key}`);
     
     let node: SceneNode | null = null;
+    
+    // Handle FigJam connectors - create them programmatically
+    if (component.isFigJamConnector && currentEditorType === 'figjam') {
+      node = await createFigJamConnector(component, position);
+      if (node) {
+        figma.currentPage.selection = [node];
+        figma.viewport.scrollAndZoomIntoView([node]);
+        figma.notify(`Created: ${component.name}`);
+      } else {
+        figma.notify(`Failed to create connector: ${component.name}`);
+      }
+      return; // Always return for FigJam connectors, don't fall through to component import
+    }
     
     // Try multiple key formats systematically, including the real hash key
     const keyFormats = [
@@ -246,11 +390,6 @@ async function insertComponentInstance(component: Component, position?: { x: num
       "9:8",                                         // Conditional Selector component set node ID
       "12:8",                                        // Cluster component set node ID
       "13:47",                                       // Conditional Area component set node ID
-      "32:19",                                       // Relational Connector component set node ID
-      "32:75",                                       // Relational Connector (Conditional) component set node ID
-      "32:55",                                       // Directional Connector component set node ID
-      "34:21",                                       // Directional Connector (Conditional) component set node ID
-      "35:23",                                       // Dir Conn (No Upstream) component set node ID
       "KNkwcYwSv6vp1yrH5SnpBs:1:14",               // File:Page component set
       "KNkwcYwSv6vp1yrH5SnpBs:2:33",               // File:Page Stack component set
       "KNkwcYwSv6vp1yrH5SnpBs:3:54",               // File:File component set
@@ -263,11 +402,6 @@ async function insertComponentInstance(component: Component, position?: { x: num
       "KNkwcYwSv6vp1yrH5SnpBs:9:8",                // File:Conditional Selector component set
       "KNkwcYwSv6vp1yrH5SnpBs:12:8",               // File:Cluster component set
       "KNkwcYwSv6vp1yrH5SnpBs:13:47",              // File:Conditional Area component set
-      "KNkwcYwSv6vp1yrH5SnpBs:32:19",              // File:Relational Connector component set
-      "KNkwcYwSv6vp1yrH5SnpBs:32:75",              // File:Relational Connector (Conditional) component set
-      "KNkwcYwSv6vp1yrH5SnpBs:32:55",              // File:Directional Connector component set
-      "KNkwcYwSv6vp1yrH5SnpBs:34:21",              // File:Directional Connector (Conditional) component set
-      "KNkwcYwSv6vp1yrH5SnpBs:35:23",              // File:Dir Conn (No Upstream) component set
       "S:KNkwcYwSv6vp1yrH5SnpBs,1:14",             // Published Page component set format
       "S:KNkwcYwSv6vp1yrH5SnpBs,2:33",             // Published Page Stack component set format
       "S:KNkwcYwSv6vp1yrH5SnpBs,3:54",             // Published File component set format
@@ -279,12 +413,7 @@ async function insertComponentInstance(component: Component, position?: { x: num
       "S:KNkwcYwSv6vp1yrH5SnpBs,8:29",             // Published Conditional Branch component set format
       "S:KNkwcYwSv6vp1yrH5SnpBs,9:8",              // Published Conditional Selector component set format
       "S:KNkwcYwSv6vp1yrH5SnpBs,12:8",             // Published Cluster component set format
-      "S:KNkwcYwSv6vp1yrH5SnpBs,13:47",            // Published Conditional Area component set format
-      "S:KNkwcYwSv6vp1yrH5SnpBs,32:19",            // Published Relational Connector component set format
-      "S:KNkwcYwSv6vp1yrH5SnpBs,32:75",            // Published Relational Connector (Conditional) component set format
-      "S:KNkwcYwSv6vp1yrH5SnpBs,32:55",            // Published Directional Connector component set format
-      "S:KNkwcYwSv6vp1yrH5SnpBs,34:21",            // Published Directional Connector (Conditional) component set format
-      "S:KNkwcYwSv6vp1yrH5SnpBs,35:23"             // Published Dir Conn (No Upstream) component set format
+      "S:KNkwcYwSv6vp1yrH5SnpBs,13:47"             // Published Conditional Area component set format
     ];
     
     let importSuccess = false;
@@ -294,7 +423,7 @@ async function insertComponentInstance(component: Component, position?: { x: num
         console.log(`🔍 Trying key format: "${keyFormat}"`);
         
         // Try component set import first (for formats that might be component sets)
-        if (keyFormat.includes("1:14") || keyFormat.includes("2:33") || keyFormat.includes("3:54") || keyFormat.includes("4:8") || keyFormat.includes("5:30") || keyFormat.includes("5:48") || keyFormat.includes("7:130") || keyFormat.includes("8:8") || keyFormat.includes("8:29") || keyFormat.includes("9:8") || keyFormat.includes("12:8") || keyFormat.includes("13:47") || keyFormat.includes("32:19") || keyFormat.includes("32:75") || keyFormat.includes("32:55") || keyFormat.includes("34:21") || keyFormat.includes("35:23")) {
+        if (keyFormat.includes("1:14") || keyFormat.includes("2:33") || keyFormat.includes("3:54") || keyFormat.includes("4:8") || keyFormat.includes("5:30") || keyFormat.includes("5:48") || keyFormat.includes("7:130") || keyFormat.includes("8:8") || keyFormat.includes("8:29") || keyFormat.includes("9:8") || keyFormat.includes("12:8") || keyFormat.includes("13:47")) {
           try {
             console.log(`  Trying as component set...`);
             const importedComponentSet = await figma.importComponentSetByKeyAsync(keyFormat);

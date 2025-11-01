@@ -337,6 +337,7 @@
     let components = [];
     let selectedComponent = null;
     let activeFilter = 'Preface'; // Default filter
+    let currentEditorType = 'figma'; // Track current environment
 
     // Request components data from plugin
     parent.postMessage({ pluginMessage: { type: 'get-components' } }, '*');
@@ -348,6 +349,7 @@
 
       if (msg.type === 'components-data') {
         components = msg.components;
+        currentEditorType = msg.editorType || 'figma'; // Store editor type
         setupFilterChips();
         renderComponents();
       }
@@ -440,25 +442,36 @@
       const insertButton = document.getElementById('insertButton');
       const connectorMessage = document.getElementById('connectorMessage');
       
-      // Handle Connectors category - always disable insert and show message
-      if (activeFilter === 'Connectors') {
-        connectorMessage.style.display = 'block';
-        insertButton.disabled = true;
-        insertButton.setAttribute('aria-label', 'Connectors cannot be inserted - use native connectors');
-      } else {
-        connectorMessage.style.display = 'none';
-      }
+      // Always hide connector message by default
+      connectorMessage.style.display = 'none';
       
       if (!selectedComponent) {
         content.className = 'description-content empty';
         content.innerHTML = 'Select a component to view its description';
-        if (activeFilter !== 'Connectors') {
-          insertButton.disabled = true;
-          insertButton.setAttribute('aria-label', 'Select a component to enable insert');
-        }
+        insertButton.disabled = true;
+        insertButton.setAttribute('aria-label', 'Select a component to enable insert');
         return;
       }
       
+      // Handle connectors: In Figma, show message and disable insert. In FigJam, allow insert.
+      if (selectedComponent.category === 'Connectors') {
+        if (currentEditorType === 'figma') {
+          // In Figma: show "use native connectors" message and disable insert
+          connectorMessage.style.display = 'block';
+          insertButton.disabled = true;
+          insertButton.setAttribute('aria-label', 'Connectors cannot be inserted - use native connectors');
+        } else {
+          // In FigJam: allow connector insertion
+          insertButton.disabled = false;
+          insertButton.setAttribute('aria-label', 'Insert selected connector');
+        }
+      } else {
+        // Non-connector components: always allow insertion
+        insertButton.disabled = false;
+        insertButton.setAttribute('aria-label', 'Insert selected component');
+      }
+      
+      // Always show component description
       content.className = 'description-content';
       content.innerHTML = ''; // Clear existing content
       
@@ -487,12 +500,6 @@
       descriptionDiv.innerHTML = htmlParagraphs.join('');
       
       content.appendChild(descriptionDiv);
-      
-      // Only enable insert button if not in Connectors category
-      if (activeFilter !== 'Connectors') {
-        insertButton.disabled = false;
-        insertButton.setAttribute('aria-label', `Insert ${selectedComponent.name} component`);
-      }
     }
 
     function insertComponent() {
