@@ -1,35 +1,44 @@
 # JJG Visual Vocabulary Library Plugin
 
-A comprehensive Figma/FigJam plugin for browsing and inserting components from the Jesse James Garrett Visual Vocabulary library. This plugin provides a complete component library browser with 15 professionally designed symbols for information architecture and user experience documentation.
+A comprehensive Figma/FigJam plugin for browsing and inserting components from the Jesse James Garrett Visual Vocabulary library. This plugin provides a complete component library browser with 24 professionally designed symbols for information architecture and user experience documentation.
 
 ## Features
 
-- **Complete Component Library**: 15 JJG Visual Vocabulary symbols with authentic designs
-- **Category-Based Organization**: 7 organized categories including Preface materials
+- **Complete Component Library**: 24 JJG Visual Vocabulary symbols with authentic designs
+- **Category-Based Organization**: 8 organized categories including Start Here materials and Conversion Tables
 - **Rich Text Descriptions**: Detailed component descriptions with proper formatting
 - **Filter System**: Easy category switching with visual filter chips
-- **Component Set Integration**: Uses actual published Figma library components
+- **Embedded Thumbnails**: All thumbnails embedded as base64 (no CDN expiration)
 - **Dual Environment Support**: Works in both Figma design files and FigJam boards
-- **Accessibility Features**: Full keyboard navigation and screen reader support
+- **Resizable Window**: Drag corners to resize the plugin window
+- **FigJam Connectors**: Special connector components available only in FigJam
 
 ## Available Components
 
-### Preface (3 components)
-- **History & Background**: Historical context and background information
-- **Symbol Definition Cheat Sheet**: Comprehensive reference guide for all symbols
-- **A Brief History of Logic**: Intellectual foundations of the visual vocabulary
+### Start Here (1 component)
+- **JJG - Conceptual Underpinnings**: Core concepts and principles of the JJG Visual Vocabulary
 
-### Pages (2 components)
+### Conversion Tables (3 components)
+- **JJG - Connectors**: Complete connector symbology reference
+- **Basic Symbols**: ISO → JJG symbol conversion for foundational shapes
+- **Logical Operators**: ISO → JJG symbol conversion for logical operators
+
+### Cheatsheets (1 component)
+- **JJG - Symbology Cheatsheet**: Comprehensive reference guide for all symbols
+
+### Pages & Files (4 components)
 - **Page**: Basic unit of user experience representation
 - **Page Stack**: Multiple related pages or screens
-
-### Connectors (0 components)
-- *Reserved for future connector elements*
-
-### Data (1 component)
 - **File**: Documents, files, and data artifacts
+- **File Stack**: Groups of functionally identical files
 
-### Logic (5 components)
+### Connectors (4 components)
+- **Relational Connector**: Simple relationships between elements
+- **Directional Connector**: Arrows showing user flow direction
+- **Dir Conn (No Upstream)**: Directional connector with upstream restriction
+- **Directional Connector (Conditional)**: Conditional directional flow
+
+### Logical Operators (5 components)
 - **Decision Point**: Decision points and branching logic
 - **Conditional Branch**: Multiple pathway branching
 - **Conditional Selector**: Selection and switching elements
@@ -41,8 +50,12 @@ A comprehensive Figma/FigJam plugin for browsing and inserting components from t
 - **Conditional Area**: Areas with specific conditions
 - **Flow Area**: Defined flow or process zones
 
-### References (1 component)
+### Reference Points (1 component)
 - **Continuation Point**: Flow continuation indicators
+
+### Data (2 components)
+- **Delay**: Pause or waiting period in user flow
+- **File Stack**: Groups of functionally identical files
 
 ## Installation
 
@@ -59,7 +72,7 @@ A comprehensive Figma/FigJam plugin for browsing and inserting components from t
 
 2. **Browse Categories**:
    - Use the filter chips at the top to switch between categories
-   - Categories: Preface, Pages, Connectors, Data, Logic, Grouping, References
+   - Categories: Start Here, Conversion Tables, Cheatsheets, Pages & Files, Connectors, Logical Operators, Grouping, Reference Points, Data
 
 3. **Select Components**:
    - Click any component card to select it
@@ -118,11 +131,12 @@ npm run watch
 - **Responsive Layout**: Three-panel design with flush alignment and proper spacing
 
 ### Current Features
-- ✅ **15 Complete Components**: All major JJG Visual Vocabulary symbols
-- ✅ **Category Organization**: 7 categories with logical grouping
-- ✅ **Component Variants**: Support for "(New)" and other component variants
+- ✅ **24 Complete Components**: All major JJG Visual Vocabulary symbols
+- ✅ **Category Organization**: 8 categories with logical grouping
+- ✅ **Embedded Thumbnails**: 3.8 MB plugin with all thumbnails as base64 data URIs
 - ✅ **Rich Descriptions**: Formatted text with proper HTML escaping
-- ✅ **Library Integration**: Direct import from published Figma library
+- ✅ **Resizable Window**: User can resize plugin window by dragging corners
+- ✅ **FigJam Support**: Special connector components for FigJam environment
 
 ## Library Reference
 

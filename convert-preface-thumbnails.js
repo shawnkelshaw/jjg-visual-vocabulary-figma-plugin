@@ -14,7 +14,10 @@ const prefaceMapping = {
   "File Stack": "File Stack.png",
   "Page": "Page.png",
   "Page Stack": "Page Stack.png",
-  "File": "File.png"
+  "File": "File.png",
+  "JJG - Connectors": "JJG-Connectors.png",
+  "Basic Symbols": "Basic-Symbols.png",
+  "Logical Operators": "Logical-Operators.png"
 };
 
 console.log('Reading code.ts...');
