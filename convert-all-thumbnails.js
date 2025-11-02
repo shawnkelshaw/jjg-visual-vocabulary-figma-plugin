@@ -19,12 +19,21 @@ const componentMapping = {
   "Conditional Area": "Conditional Area.svg",
   "Flow Area": "Flow Area.svg",
   "Continuation Point": "Continuation Point.svg",
+  "Flow Area-Reference": "Flow-Area-Reference.svg",
   "Delay": "Delay.svg",
   "Relational Connector": "Relational Connector.svg",
   "Relational Connector (Conditional)": "Relational Connector (Conditional).svg",
   "Directional Connector": "Directional Connector.svg",
   "Directional Connector (Conditional)": "Directional Connector (Conditional).svg",
-  "Dir Conn (No Upstream)": "Directional Connector (No Downstream).svg"
+  "Dir Conn (No Upstream)": "Directional Connector (No Downstream).svg",
+  "Main": "figjam-connectors/main.svg",
+  "Conditional": "figjam-connectors/directional-happy-conditional.svg",
+  "No Back": "figjam-connectors/directional-happy-no-back.svg",
+  "Conditional - No Back": "figjam-connectors/directional-happy-conditional-no-back.svg",
+  "Branched-Main": "figjam-connectors/directional-branched-main.svg",
+  "Branched-Conditional": "figjam-connectors/directional-branched-conditional.svg",
+  "Branched-No-Back": "figjam-connectors/directional-branched-no-back.svg",
+  "Branched-Conditional-No-Back": "figjam-connectors/directional-branched-conditional-no-back.svg"
 };
 
 console.log('Reading code.ts...');
